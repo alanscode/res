@@ -17,9 +17,7 @@ admin.initializeApp(functions.config().firebase)
 
 app.post('/contactform', (req, res) => {
     if (req.body.alan != '@l@n') {
-
         res.end("Unauthorized Access")
-        return
     }
 
     delete req.body.alan
@@ -31,7 +29,8 @@ app.post('/contactform', (req, res) => {
 })
 
 app.get('/list', (req, res) => {
-    admin.database().ref("contactform").orderByKey()
+    admin.database().ref("contactform")
+        .orderByKey()
         .once("value")
         .then(messages => {
             var result = JSON.stringify(messages.val())
@@ -39,6 +38,5 @@ app.get('/list', (req, res) => {
         })
 
 })
-
 
 exports.message = functions.https.onRequest(app);
