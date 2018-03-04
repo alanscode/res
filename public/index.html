@@ -218,9 +218,7 @@
 
                             <section class="section brd-btm padd-box">
                                 <div class="row">
-                                    <div class="alert alert-success" role="alert">
-                                        <strong>STATUS UPDATE:</strong> Available for work! :)
-                                    </div>
+
                                     <div class="col-sm-12">
                                         <div class="text-box">
                                             <p>
@@ -1475,8 +1473,11 @@
                             <div class="crt-paper-cont paper-padd clear-mrg">
                                 <div class="padd-box">
                                     <h2 class="title-lg text-upper">contact me</h2>
+                                    <div v-if="formSubmitted" class="alert alert-success" role="alert">
+                                        <strong>THANKS</strong> for reaching out! I'll get back to you soon! :)
+                                    </div>
                                     <div class="padd-box-sm">
-                                        <form  method="post" class="contact-form">
+                                        <form method="post" class="contact-form" v-if="!formSubmitted">
 
                                             <div class="form-group">
                                                 <label class="form-label" for="author">Your Name</label>
@@ -1539,6 +1540,7 @@
 
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+        
         <script>
             var app = new Vue({
                 el: '#contact',
@@ -1547,22 +1549,23 @@
                         name: '',
                         email: '',
                         comment: '',
-                        alan:'@l@n'
-                    }
+                        alan: '@l@n'
+                    },
+                    formSubmitted: false
                 },
                 methods: {
-                    submitForm() {                        
-                        $.post('https://us-central1-resume-edfe8.cloudfunctions.net/message/contactform', this.contactForm, function(result){
-                            console.log(result)
-                        })
+                    submitForm() {
+                        $.post('https://us-central1-resume-edfe8.cloudfunctions.net/message/contactform', this.contactForm,
+                            function (result) {
+                                this.formSubmitted = result == "OK"
+                            }.bind(this))
                     }
                 }
             })
-
-            window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.4.min.js"><\/script>')
         </script>
 
-
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
         <script type="text/javascript" src="assets/js/plugins.min.js"></script>
         <script type="text/javascript" src="assets/js/theme.min.js"></script>
 

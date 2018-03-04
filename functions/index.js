@@ -9,13 +9,6 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(cors)
 
-// var serviceAccount = require('./resume-3417c70dc983.json')
-
-// admin.initializeApp({
-//   credential: admin.credential.cert(serviceAccount),
-//   databaseURL: 'https://resume-edfe8.firebaseio.com'
-// });
-
 admin.initializeApp(functions.config().firebase)
 
 app.post('/contactform',(req,res) =>{
