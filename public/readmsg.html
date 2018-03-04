@@ -53,15 +53,15 @@
                                                 <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Commen</th>
-                                                <th></th>
+                                                
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr v-for="message in messages">
-                                                <th>{{message.key}}</th>
+                                                <th>{{message.name}}</th>
                                                 <td>{{message.email}}</td>
                                                 <td>{{message.comment}}</td>
-                                                <td><button @tap="remove(message)">Delete</button></td>
+                                                
                                             </tr>                           
                                             </tbody>
                                         </table>
