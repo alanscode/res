@@ -2,25 +2,30 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin')
 const express = require('express')
 var bodyParser = require('body-parser');
-
+const cors = require('cors')({origin: true});
 
 const app = express();
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+app.use(cors)
 
+// var serviceAccount = require('./resume-3417c70dc983.json')
 
-var serviceAccount = require('./resume-3417c70dc983.json');
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount),
+//   databaseURL: 'https://resume-edfe8.firebaseio.com'
+// });
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://resume-edfe8.firebaseio.com'
-});
+admin.initializeApp(functions.config().firebase)
 
 app.post('/contactform',(req,res) =>{
-    if(req.body.secretkey != '@l@n') {
+    if(req.body.alan != '@l@n') {
+        
         res.end("Unauthorized Access")
         return
     }
+    
+    delete req.body.alan
 
     let message = req.body
 
