@@ -53,13 +53,15 @@
                                                 <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Commen</th>
+                                                <th></th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr v-for="message in messages">
-                                                <th>{{message.name}}</th>
+                                                <th>{{message.key}}</th>
                                                 <td>{{message.email}}</td>
                                                 <td>{{message.comment}}</td>
+                                                <td><button @tap="remove(message)">Delete</button></td>
                                             </tr>                           
                                             </tbody>
                                         </table>
@@ -108,8 +110,9 @@
                 messages: null
             },
             created() {
-                //$.get('https://us-central1-resume-edfe8.cloudfunctions.net/message/list',
-                axios.get('http://localhost:5001/resume-edfe8/us-central1/message/list').then(result=>{                    
+                //axios.get('http://localhost:5001/resume-edfe8/us-central1/message/list')
+                axios.get('https://us-central1-resume-edfe8.cloudfunctions.net/message/list')
+                .then(result=>{                    
                     this.messages = result.data
                     //console.log(this.messages)
                 }).catch(err=>alert(err));

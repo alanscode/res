@@ -31,7 +31,6 @@ app.post('/contactform', (req, res) => {
 })
 
 app.get('/list', (req, res) => {
-    console.log('function called')
     admin.database().ref("contactform").orderByKey()
         .once("value")
         .then(messages => {
