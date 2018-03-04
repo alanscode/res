@@ -1,0 +1,45 @@
+[debug] [2018-03-04T07:23:39.957Z] ----------------------------------------------------------------------
+[debug] [2018-03-04T07:23:39.959Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cush\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only hosting,functions
+[debug] [2018-03-04T07:23:39.959Z] CLI Version:   3.17.4
+[debug] [2018-03-04T07:23:39.959Z] Platform:      win32
+[debug] [2018-03-04T07:23:39.959Z] Node Version:  v8.9.4
+[debug] [2018-03-04T07:23:39.959Z] Time:          Sat Mar 03 2018 23:23:39 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-04T07:23:39.959Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-04T07:23:39.968Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-04T07:23:39.968Z] > authorizing via signed-in user
+[debug] [2018-03-04T07:23:39.970Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume-edfe8  
+  
+ Sat Mar 03 2018 23:23:39 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-04T07:23:40.644Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-04T07:23:40.645Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume-edfe8/tokens  
+  
+ Sat Mar 03 2018 23:23:40 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-04T07:23:40.976Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\cush\Desktop\demo1'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-03-04T07:23:41.250Z] Fetching environment
+[debug] [2018-03-04T07:23:41.251Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/resume-edfe8  
+  
+ Sat Mar 03 2018 23:23:41 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-04T07:23:41.251Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/resume-edfe8/apiKeys  
+  
+ Sat Mar 03 2018 23:23:41 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-04T07:23:41.251Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/resume-edfe8  
+  
+ Sat Mar 03 2018 23:23:41 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-04T07:23:41.743Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-04T07:23:41.753Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-04T07:23:41.754Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/25303282816/clients/_:getWebAppConfig  
+  
+ Sat Mar 03 2018 23:23:41 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-04T07:23:41.787Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-04T07:23:41.787Z] Starting @google-cloud/functions-emulator
+[debug] [2018-03-04T07:23:42.171Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-04T07:23:42.817Z] Parsing function triggers
+[info] +  functions: message: http://localhost:5001/resume-edfe8/us-central1/message

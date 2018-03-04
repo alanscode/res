@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Alan Nguyen - Los Angeles Based Full Stack Developer</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="/assets/fonts/icomoon/style.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="/assets/css/plugins.min.css" rel="stylesheet">
+    <link href="/assets/css/style.min.css" rel="stylesheet">
+
+    <!-- Modernizer -->
+    <script type="text/javascript" src="/assets/js/vendor/modernizr-3.3.1.min.js"></script>
+
+</head>
+
+<body class="">
+    <div class="crt-wrapper">
+        <header id="crt-header">
+
+        </header>
+        <!-- #crt-header -->
+
+        <div id="list" class="crt-container">
+
+            <div class="crt-container-sm">
+                <div id="about" class="crt-paper-layers crt-animate">
+                    <div class="crt-paper clearfix">
+                        <div class="crt-paper-cont paper-padd clear-mrg">
+
+                            <section class="section brd-btm padd-box">
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+                                        <table class="table-fixed">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Commen</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr v-for="message in messages">
+                                                <th>{{message.name}}</th>
+                                                <td>{{message.email}}</td>
+                                                <td>{{message.comment}}</td>
+                                            </tr>                           
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- .section -->
+
+
+                            <!-- .section -->
+
+                        </div>
+                    </div>
+                    <!-- .crt-paper -->
+                </div>
+            </div>
+            <!-- .crt-container-sm -->
+        </div>
+        <!-- .crt-container -->
+
+
+        <!-- #crt-sidebar -->
+        <footer id="crt-footer" class="crt-container-lg">
+
+        </footer>
+        <!-- #crt-footer -->
+
+        <svg id="crt-bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
+            <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71" />
+        </svg>
+
+        <svg id="crt-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
+            <polygon points="0,0,633,0,633,536" />
+        </svg>
+    </div>
+    <!-- .crt-wrapper --> 
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#list',
+            data: {
+                messages: null
+            },
+            created() {
+                //$.get('https://us-central1-resume-edfe8.cloudfunctions.net/message/list',
+                axios.get('http://localhost:5001/resume-edfe8/us-central1/message/list').then(result=>{                    
+                    this.messages = result.data
+                    //console.log(this.messages)
+                }).catch(err=>alert(err));
+            }
+        })
+    </script>
+
+    
+
+</body>
+
+</html>
