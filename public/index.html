@@ -26,7 +26,20 @@
 
     <!-- Modernizer -->
     <script type="text/javascript" src="/assets/js/vendor/modernizr-3.3.1.min.js"></script>
+    <style>
+        .fade-enter-active,
+        .fade-leave-active {
+            transition: opacity 2s;
+        }
 
+        .fade-enter,
+        .fade-leave-to
+        /* .fade-leave-active below version 2.1.8 */
+
+            {
+            opacity: 0;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -230,23 +243,26 @@
                             <!-- .section -->
 
                             <section id="stats" class="section padd-box">
-                                <h2 class="title-lg text-upper padd-box" style="margin-bottom:0px;">Skills</h2>
+                                <h2 class="title-lg text-upper padd-box" style="margin-bottom:0px;margin-left:0px;">Skill Sets</h2>
                                 <div class="row">
 
                                     <div class="tabs tabs-vertical">
 
                                         <ul class="tabs-menu">
                                             <li class="active">
-                                                <a href="#tab-vrt-1">languages</a>
+                                                <a href="#tab-vrt-1">asp.net stack</a>
                                             </li>
                                             <li class="">
-                                                <a href="#tab-vrt-2">frameworks</a>
+                                                <a href="#tab-vrt-2">web development</a>
                                             </li>
                                             <li class="">
-                                                <a href="#tab-vrt-3">tools</a>
+                                                <a href="#tab-vrt-db">database development</a>
                                             </li>
                                             <li class="">
-                                                <a href="#tab-vrt-4">mobile</a>
+                                                <a href="#tab-vrt-3">tools I use</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#tab-vrt-4">mobile development</a>
                                             </li>
                                         </ul>
 
@@ -259,34 +275,22 @@
                                                         <span class="progress-text text-muted">senior level</span>
                                                     </div>
 
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
+                                                        <strong class="progress-title">ASP.NET MVC</strong>
+
+                                                        <span class="progress-text text-muted">senior level</span>
+                                                    </div>
+
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
+                                                        <strong class="progress-title">WebAPI 2</strong>
+
+                                                        <span class="progress-text text-muted">senior level</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 clear-mrg">
 
                                                     <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
                                                         <strong class="progress-title">LINQ</strong>
-
-                                                        <span class="progress-text text-muted">senior level</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 clear-mrg">
-
-                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">Javascript</strong>
-
-                                                        <span class="progress-text text-muted">senior level</span>
-                                                    </div>
-                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">SQL</strong>
-
-                                                        <span class="progress-text text-muted">senior level</span>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                            <div id="tab-vrt-2" class="tab-content" style="display: none;">
-                                                <div class="col-sm-6 clear-mrg">
-                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">ASP.NET MVC</strong>
 
                                                         <span class="progress-text text-muted">senior level</span>
                                                     </div>
@@ -296,7 +300,29 @@
                                                         <span class="progress-text text-muted">senior level</span>
                                                     </div>
                                                     <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">Node</strong>
+                                                        <strong class="progress-title">SQL</strong>
+
+                                                        <span class="progress-text text-muted">senior level</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="tab-vrt-2" class="tab-content" style="display: none;">
+                                                <div class="col-sm-6 clear-mrg">
+
+
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
+                                                        <strong class="progress-title">Javascript</strong>
+
+                                                        <span class="progress-text text-muted">senior level</span>
+                                                    </div>
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
+                                                        <strong class="progress-title">SCSS / CSS</strong>
+
+                                                        <span class="progress-text text-muted">senior level</span>
+                                                    </div>
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
+                                                        <strong class="progress-title">HTML5</strong>
 
                                                         <span class="progress-text text-muted">senior level</span>
                                                     </div>
@@ -328,9 +354,10 @@
                                                         <span class="progress-text text-muted">mid level</span>
                                                     </div>
                                                     <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">SCSS / CSS</strong>
+                                                        <strong class="progress-title">Webpack</strong>
 
-                                                        <span class="progress-text text-muted">senior level</span>
+                                                        <span class="progress-text text-muted">mid level</span>
+
                                                     </div>
                                                 </div>
 
@@ -338,25 +365,18 @@
 
                                             <div id="tab-vrt-3" class="tab-content" style="display: none;">
                                                 <div class="col-sm-6 clear-mrg">
-
+                                                        <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
+                                                                <strong class="progress-title">Node</strong>
+        
+                                                                <span class="progress-text text-muted">senior level</span>
+                                                            </div>
                                                     <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
                                                         <strong class="progress-title">Linux</strong>
 
                                                         <span class="progress-text text-muted">senior level</span>
 
                                                     </div>
-                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">Webpack</strong>
-
-                                                        <span class="progress-text text-muted">mid level</span>
-
-                                                    </div>
-                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">Gulp</strong>
-
-                                                        <span class="progress-text text-muted">mid level</span>
-
-                                                    </div>
+                                                   
                                                 </div>
                                                 <div class="col-sm-6 clear-mrg">
                                                     <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
@@ -371,14 +391,43 @@
                                                         <span class="progress-text text-muted">senior level</span>
 
                                                     </div>
-                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">Firebase</strong>
-
-                                                        <span class="progress-text text-muted">mid level</span>
-
-                                                    </div>
+                                         
                                                 </div>
 
+
+                                            </div>
+                                            <div id="tab-vrt-db" class="tab-content" style="display: none;">
+                                                <div class="col-sm-6 clear-mrg">
+
+
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
+                                                        <strong class="progress-title">SQL Server</strong>
+
+                                                        <span class="progress-text text-muted">senior level</span>
+                                                    </div>
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
+                                                            <strong class="progress-title">mySQL</strong>
+    
+                                                            <span class="progress-text text-muted">senior level</span>
+                                                        </div>
+
+                                                </div>
+
+                                                <div class="col-sm-6 clear-mrg">
+
+
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+                                                        <strong class="progress-title">Firebase</strong>
+
+                                                        <span class="progress-text text-muted">senior level</span>
+                                                    </div>
+
+                                                    <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+                                                            <strong class="progress-title">NoSQL</strong>
+    
+                                                            <span class="progress-text text-muted">advance</span>
+                                                        </div>
+                                                </div>
 
                                             </div>
 
@@ -394,9 +443,9 @@
                                                 <div class="col-sm-6 clear-mrg">
 
                                                     <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                                                        <strong class="progress-title">Swift / Xcode</strong>
+                                                        <strong class="progress-title">React Native</strong>
 
-                                                        <span class="progress-text text-muted">junior level</span>
+                                                        <span class="progress-text text-muted">mid level</span>
                                                     </div>
                                                 </div>
 
@@ -1322,11 +1371,13 @@
                             <div class="crt-paper-cont paper-padd clear-mrg">
                                 <div class="padd-box">
                                     <h2 class="title-lg text-upper">contact me</h2>
+                                    <transition name="fade"></transition>
                                     <div v-if="formSubmitted" class="alert alert-success" role="alert">
                                         <strong>THANKS</strong> for reaching out! I'll get back to you soon! :)
                                     </div>
-                                    <div class="padd-box-sm">
-                                        <form method="post" class="contact-form" v-if="!formSubmitted">
+                                    </transition>
+                                    <div v-else class="padd-box-sm">
+                                        <form method="post" class="contact-form">
 
                                             <div class="form-group">
                                                 <label class="form-label" for="author">Your Name</label>
@@ -1338,7 +1389,7 @@
                                             <div class="form-group">
                                                 <label class="form-label" for="email">Your E-mail</label>
                                                 <div class="form-item-wrap">
-                                                    <input id="email" name="email" v-model="contactForm.email" class="form-item" type="email" required="required">
+                                                    <input id="email" name="email" v-model="contactForm.email" class="form-item" type="email">
                                                 </div>
                                             </div>
 
@@ -1350,7 +1401,7 @@
                                             </div>
 
                                             <div class="form-submit form-item-wrap">
-                                                <input v-if="contactForm.comment.length > 10 && contactForm.email.length > 3" class="btn btn-lg" style="background-color:indianred;color:white"
+                                                <input autofocus v-if="contactForm.comment.length > 10 && contactForm.email.length > 3" class="btn btn-lg" style="background-color:indianred;color:white"
                                                     type="submit" value="SUBMIT" @click.prevent="submitForm">
                                             </div>
                                         </form>

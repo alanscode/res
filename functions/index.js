@@ -29,6 +29,7 @@ app.post('/contactform', (req, res) => {
 })
 
 app.get('/list', (req, res) => {
+    
     admin.database().ref("contactform")
         .orderByKey()
         .once("value")
