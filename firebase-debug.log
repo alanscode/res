@@ -1,0 +1,52 @@
+[debug] [2018-03-06T06:03:01.389Z] ----------------------------------------------------------------------
+[debug] [2018-03-06T06:03:01.391Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cush\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only hosting
+[debug] [2018-03-06T06:03:01.391Z] CLI Version:   3.17.4
+[debug] [2018-03-06T06:03:01.392Z] Platform:      win32
+[debug] [2018-03-06T06:03:01.392Z] Node Version:  v8.9.4
+[debug] [2018-03-06T06:03:01.392Z] Time:          Mon Mar 05 2018 22:03:01 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T06:03:01.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-06T06:03:01.402Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-06T06:03:01.402Z] > authorizing via signed-in user
+[debug] [2018-03-06T06:03:01.404Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume-edfe8  
+  
+ Mon Mar 05 2018 22:03:01 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T06:03:01.784Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-06T06:03:01.785Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume-edfe8/tokens  
+  
+ Mon Mar 05 2018 22:03:01 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T06:03:02.161Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'resume-edfe8'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-06T06:03:03.318Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/resume-edfe8/uploads/-L6ttz9PzZsCYqJKvTTG?fileCount=69&message=  
+  
+ Mon Mar 05 2018 22:03:03 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T06:03:21.530Z] ----------------------------------------------------------------------
+[debug] [2018-03-06T06:03:21.532Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cush\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only hosting
+[debug] [2018-03-06T06:03:21.532Z] CLI Version:   3.17.4
+[debug] [2018-03-06T06:03:21.532Z] Platform:      win32
+[debug] [2018-03-06T06:03:21.532Z] Node Version:  v8.9.4
+[debug] [2018-03-06T06:03:21.532Z] Time:          Mon Mar 05 2018 22:03:21 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T06:03:21.533Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-06T06:03:21.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-06T06:03:21.542Z] > authorizing via signed-in user
+[debug] [2018-03-06T06:03:21.543Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume-edfe8  
+  
+ Mon Mar 05 2018 22:03:21 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T06:03:21.913Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-06T06:03:21.914Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume-edfe8/tokens  
+  
+ Mon Mar 05 2018 22:03:21 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T06:03:22.235Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'resume-edfe8'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-06T06:03:23.373Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/resume-edfe8/uploads/-L6tu332IYQobE1BVqrz?fileCount=69&message=  
+  
+ Mon Mar 05 2018 22:03:23 GMT-0800 (Pacific Standard Time)
