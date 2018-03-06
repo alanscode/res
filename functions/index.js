@@ -16,7 +16,7 @@ app.use(cors)
 admin.initializeApp(functions.config().firebase)
 
 app.post('/contactform', (req, res) => {
-    if (req.body.alan != '@l@n') {
+    if (req.body.alan != '@l@n') {k
         res.end("Unauthorized Access")
     }
 
@@ -31,9 +31,9 @@ app.post('/contactform', (req, res) => {
 app.get('/list', (req, res) => {
     
     admin.database().ref("contactform")
-        .orderByKey()
-        .once("value")
-        .then(messages => {
+    .orderByKey()
+    .once("value")
+    .then(messages => {
             var result = JSON.stringify(messages.val())
             res.end(result)
         })
