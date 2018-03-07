@@ -1,0 +1,31 @@
+[debug] [2018-03-06T21:26:32.608Z] ----------------------------------------------------------------------
+[debug] [2018-03-06T21:26:32.610Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cush\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only hosting
+[debug] [2018-03-06T21:26:32.610Z] CLI Version:   3.17.4
+[debug] [2018-03-06T21:26:32.610Z] Platform:      win32
+[debug] [2018-03-06T21:26:32.610Z] Node Version:  v8.9.4
+[debug] [2018-03-06T21:26:32.610Z] Time:          Tue Mar 06 2018 13:26:32 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T21:26:32.610Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-06T21:26:32.619Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-06T21:26:32.620Z] > authorizing via signed-in user
+[debug] [2018-03-06T21:26:32.621Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume-edfe8  
+  
+ Tue Mar 06 2018 13:26:32 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T21:26:34.148Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-06T21:26:34.149Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume-edfe8/tokens  
+  
+ Tue Mar 06 2018 13:26:34 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T21:26:35.498Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'resume-edfe8'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-06T21:26:36.753Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/resume-edfe8/uploads/-L6xCMk8jC76zqcy53i8?fileCount=69&message=  
+  
+ Tue Mar 06 2018 13:26:36 GMT-0800 (Pacific Standard Time)
+[debug] [2018-03-06T21:27:11.191Z] Error: write ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at WriteWrap.afterWrite [as oncomplete] (net.js:867:14)
+[error] 
+[error] Error: Server Error. write ECONNRESET
