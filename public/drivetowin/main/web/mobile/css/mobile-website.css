@@ -1,0 +1,628 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+
+
+/*End Reset*/
+html, body {
+  min-height:100%;height:100%;
+}
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+a {
+    color: #000;
+}
+
+#panelsI {
+    background: #76D9E2 url(../../images/sky.png);
+}
+
+.main-Container {
+    max-width: 1920px;
+    min-width: 480px;
+}
+
+.clouds .cloud {
+    position: absolute;
+    width: 6%;
+    left: 300px;
+}
+
+.clouds .cloud1 {
+    top: 10%;
+    left: -1%;
+}
+
+.clouds .cloud2 {
+    top: 15%;
+    left: 28%;
+}
+
+.clouds .cloud3 {
+    top: 5%;
+    left: 90%;
+}
+
+.clouds .cloud4 {
+    top: 20%;
+    left: 57%;
+}
+
+.joystixP {
+    font-family: 'Joystix W00 Monospace';
+     font-size: 1.2em !important;
+    /*font-size: .9em !important;*/
+}
+
+.joystixM {
+    font-family: 'Joystix W00 Proportional';
+}
+
+/*PANELS START*/
+#panelsI {
+    width: 300%;
+    overflow: hidden;
+    position: relative;
+}
+
+#panel1 {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 33.33%;
+    height: 100%;
+    background-image: url(../images/left.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+#panel2 {
+    position: absolute;
+    left: 33.34%;
+    top: 0;
+    width: 33.33%;
+    height: 100%;
+    background-image: url(../images/center.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+.copyright {
+     width: 23%;
+    right: 13%;
+    position: absolute;
+    bottom: 12%;
+    height: 3%;
+}
+
+.terms {
+    height: 100%;
+    width: 57%;
+    float: right;
+    cursor: pointer;
+}
+
+.privacy {
+    height: 100%;
+    width: 38%;
+    float: left;
+    cursor: pointer;
+}
+
+#panel3 {
+    position: absolute;
+    left: 66.67%;
+    top: 0;
+    width: 33.33%;
+    height: 100%;
+    background-image: url(../images/right.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+.signs {
+    color: #e26b30;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-title {
+    position: absolute;
+    top: 16%;
+    width: 62%;
+
+    left: 19%;
+}
+
+/*PANELS END*/
+
+
+/*MEDIA Q START*/
+@media screen and (min-width: 1024px) {
+
+    div#rules p, div#emails p {
+        font-size: 12px;
+        padding-top: 2%;
+    }
+
+    input[type="text"] {
+        font-size: 15px;
+    }
+
+    .signs {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 1023px) and (min-width: 768px) {
+
+    div#rules p, div#emails p {
+        font-size: 9px;
+        padding-top: 2%;
+    }
+
+    input[type="text"] {
+        font-size: 10px;
+    }
+
+    .signs {
+        font-size: 8px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    input[type="text"] {
+        font-size: 7px;
+    }
+
+    div#rules p, div#emails p {
+        font-size: 7px;
+        padding-top: 2%;
+    }
+
+    .signs {
+        font-size: 6px;
+    }
+}
+
+/*MEDIA Q END*/
+
+
+
+
+
+/*Form START*/
+.form-wrapper {
+    height: 87%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+
+form > div {
+        float: left;
+    overflow: hidden;
+    padding: 0.5%;
+    margin: 0 0 3.5% 0;
+    height: 100%;
+    display: inline-block;
+    border: #fff solid 2px;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+}
+
+input[type="text"] {
+    width: 99.9%;
+    height: 100%;
+    padding: 0 0 6% 6%;
+    border: none;
+    display: block;
+    font-size: 0.9em;
+}
+
+#gameform {
+    height: 4%;
+}
+
+
+div#firstname {
+    width: 45%;
+    margin-right: 3%;
+    background: white;
+}
+
+div#lastname {
+    width: 45%;
+    background: white;
+}
+
+div#email {
+    width: 45%;
+    margin-right: 3%;
+    background: white;
+}
+
+div#phone {
+    width: 45%;
+    background: white;
+}
+
+div#street {
+    width: 55%;
+    margin-right: 3%;
+    background: white;
+}
+
+div#street > input {
+    padding: 0 0 6% 3.2%;
+}
+
+div#apt {
+    width: 35%;
+    background: white;
+}
+
+div#city {
+    width: 45%;
+    margin-right: 3%;
+    background: white;
+}
+
+div#state {
+    width: 21%;
+    margin-right: 3%;
+    background: white;
+}
+
+div#zip {
+    width: 19%;
+    background: white;
+}
+
+#emails, #rules {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    width: 97%;
+    text-align: left;
+    height: 130%;
+    margin-bottom: 0%;
+    border: none !important;
+}
+
+.check-box {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 20px;
+    width: 2vw;
+    height: 2vw;
+    min-height:2vw;
+    min-width:2vw;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:  5px 5px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+}
+
+    .check-box input[type="checkbox"] {
+        display: none;
+    }
+
+label {
+    cursor: pointer;
+}
+
+.check-box input[type="checkbox"]:checked ~ label {
+    transition: all 0.5s ease 0s;
+    background: #5FCDE4 none repeat scroll 0 0;
+    display: inline-block;
+    margin: 25%;
+    padding: 0;
+    height: 50%;
+    width: 50%;
+}
+
+.check-box input[type="checkbox"] ~ label {
+    transition: all 0.5s ease 0s;
+    background: #fff none repeat scroll 0 0;
+    cursor: pointer;
+    display: inline-block;
+    margin: 25%;
+    padding: 0;
+    height: 50%;
+    width: 50%;
+}
+
+.buttons {
+    width: 24%;
+    height: 60px;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    cursor: pointer;
+}
+
+    .buttons > img {
+        width: 100%;
+    }
+
+    .buttons input {
+        background: #fff none repeat scroll 0 0;
+        border: 0 none;
+        color: #000;
+        cursor: pointer;
+        font-size: 15px;
+        height: 60px;
+        margin: 0;
+        outline: medium none;
+    }
+
+    .buttons #submit {
+        width: 120px;
+        background: url(../images/submit.png);
+    }
+
+
+
+/*Form END*/
+.gopher {
+    width: 3%;
+    height: 2%;
+    position: absolute;
+    top: 66%;
+    left: 1%;
+    z-index: 5;
+        display:none;
+}
+
+    .gopher > img {
+        width: 100%;
+    }
+
+.duck {
+  width: 1.7%;
+    height: 2%;
+    position: absolute;
+    top: 61%;
+    left: 36%;
+    z-index: 5;
+}
+
+    .duck img {
+        width: 100%;
+    }
+
+.orientation {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+}
+
+    .orientation div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 31%;
+    }
+
+        .orientation div img {
+            width: 100%;
+        }
+
+.click-here {
+    position: absolute;
+    z-index: 1;
+    width: 11%;
+    height: 4%;
+    top: 20%;
+    left: 31%;
+    cursor: pointer;
+}
+
+
+.lightbox {
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1018;
+}
+
+    .lightbox > div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+        .lightbox > div img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+
+
+
+/*leaderboard*/
+.leaderboard-main-Container #panelsI {
+    width: 300%;
+    overflow: hidden;
+    position: relative;
+}
+
+.leaderboard-main-Container #lb-panel {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%; /*background-image: url(../images/LeaderBoard_back.png); background-size: cover;    background-position: center;background-repeat: no-repeat;*/
+    z-index: 1;
+}
+
+.leaderboard-main-Container .top5 {
+    width: 82%;
+    height: 50%;
+    top: 27%;
+    position: relative;
+    left: 9%;
+}
+
+.leaderboard-main-Container .title p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.7em !important;
+    font-size: 1.7vw;
+}
+
+.leaderboard-main-Container .leaderboard {
+    position: absolute;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em !important;
+    top: 20%;
+}
+
+.leaderboard-main-Container td .row {
+    width: 100%;
+    display: inline-block;
+    margin: 4% auto;
+}
+
+.leaderboard-main-Container .text-name {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+
+.leaderboard-main-Container td .row.text-name-container {
+    margin: 0% auto;
+}
+
+.leaderboard-main-Container input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.94em !important;
+    vertical-align: middle;
+        -webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.75);
+    line-height: 1em;
+}
+
+.leaderboard-main-Container td {
+    vertical-align: middle;
+    width: 33%;
+}
+
+.leaderboard-main-Container tr td:first-child {
+    text-align: right;
+}
+
+.leaderboard-main-Container #inner-container {
+    background-image: url(../../images/LeaderBoard_back.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leaderboard-main-Container .enter-sweepstakes {
+    display:none;
+    position: relative;
+    top: 65%;
+    left: 82%;
+    cursor: pointer;
+    width: 22%;
+}
+
+    .leaderboard-main-Container .enter-sweepstakes > img {
+        width: 100%;
+    }
+
+.leaderboard-main-Container .close {    
+    height: 12%;
+    top: -41%;
+    position: relative;
+    left: 87%;
+    width: 7%;
+    cursor: pointer; }
+.leaderboard-main-Container .play {    
+height: 12%;
+    top: -53%;
+    position: relative;
+    left: 5%;
+    width: 7%;
+    cursor: pointer;}

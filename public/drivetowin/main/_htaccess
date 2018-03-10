@@ -1,0 +1,3 @@
+RewriteEngine On
+	RewriteRule ^rules/$ /web/rules/HondaClassic_OfficialRules.pdf [R=301,NC,L]
+	RewriteRule ^rules$ /web/rules/HondaClassic_OfficialRules.pdf [R=301,NC,L]

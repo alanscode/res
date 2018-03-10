@@ -1,0 +1,45 @@
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP Warning:  include(C:/sites/Honda-HondaClassicMicrosite/main/../db.config): failed to open stream: No such file or directory in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\register.php:0
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\register.php:3
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP Warning:  include(): Failed opening 'C:/sites/Honda-HondaClassicMicrosite/main/../db.config' for inclusion (include_path='.;C:\php\pear') in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\register.php:0
+[15-Feb-2016 10:23:42 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\register.php:3
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP Warning:  include(C:/sites/Honda-HondaClassicMicrosite/main/../db.config): failed to open stream: No such file or directory in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP Warning:  include(): Failed opening 'C:/sites/Honda-HondaClassicMicrosite/main/../db.config' for inclusion (include_path='.;C:\php\pear') in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[15-Feb-2016 10:48:24 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP Warning:  include(C:/sites/Honda-HondaClassicMicrosite/main/../db.config): failed to open stream: No such file or directory in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP Warning:  include(): Failed opening 'C:/sites/Honda-HondaClassicMicrosite/main/../db.config' for inclusion (include_path='.;C:\php\pear') in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[15-Feb-2016 13:33:41 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP Warning:  include(C:/sites/Honda-HondaClassicMicrosite/main/../db.config): failed to open stream: No such file or directory in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP Warning:  include(): Failed opening 'C:/sites/Honda-HondaClassicMicrosite/main/../db.config' for inclusion (include_path='.;C:\php\pear') in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 16
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP Stack trace:
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[15-Feb-2016 14:27:40 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP Warning:  include(C:/sites/Honda-HondaClassicMicrosite/main/../db.config): failed to open stream: No such file or directory in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 17
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP Stack trace:
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP Warning:  include(): Failed opening 'C:/sites/Honda-HondaClassicMicrosite/main/../db.config' for inclusion (include_path='.;C:\php\pear') in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 17
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP Stack trace:
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[16-Feb-2016 10:13:19 America/Los_Angeles] PHP   2. include() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:3
+[16-Feb-2016 13:29:51 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php on line 58
+[16-Feb-2016 13:29:51 America/Los_Angeles] PHP Stack trace:
+[16-Feb-2016 13:29:51 America/Los_Angeles] PHP   1. {main}() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:0
+[16-Feb-2016 13:29:51 America/Los_Angeles] PHP   2. getDBConnection() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\topscores.php:18
+[16-Feb-2016 13:29:51 America/Los_Angeles] PHP   3. mysqli->mysqli() C:\sites\Honda-HondaClassicMicrosite\main\web\handlers\include.php:58

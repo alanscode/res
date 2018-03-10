@@ -1,0 +1,67 @@
+
+.game-Container {
+    background-color: black;
+    margin: 0;
+    font-family: 'Joystix W00 Monospace!important';
+    display: none;
+}
+
+#pausemenu {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    display: none;
+    left: 0;
+    right:0;
+    margin:auto;
+    overflow: hidden;
+}
+
+#resume {
+    position: absolute;
+    width: 32%;
+    height: 8%;
+    left: 13%;
+    top: 69%;
+    cursor:pointer;
+}
+
+#resumex {
+    position: absolute;
+    width: 7%;
+    height: 11%;
+    left: 90%;
+    top: 4%;
+    cursor: pointer;
+}
+
+#quit {
+    position: absolute;
+    width: 32%;
+    height: 8%;
+    left: 55%;
+    top: 69%;
+    cursor: pointer;
+}
+
+#sounds {
+    position: absolute;
+    top: 4%;
+    left: 3.5%;
+    width: 7%;
+    height: 11%;
+    cursor:pointer;
+}
+
+#shopLink {
+    position: absolute;
+    width: 11%;
+    height: 6%;
+    left: 84%;
+    top: 89%;
+    cursor: pointer;
+}
+
+#pausemenu #pauseimg {
+    width: 100%;                
+}

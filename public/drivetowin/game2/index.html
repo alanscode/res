@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html>
+
+    <head>
+
+        <title>Putting</title>
+        
+        <style type="text/css">
+            body { margin: 0; padding: 0; overflow-x: hidden; }
+            div { box-sizing: border-box;}
+            
+            @font-face {
+                font-family: "joystix";
+                src: url('assets/global/fonts/joystix monospace.ttf');
+            }
+            
+        </style>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <script type="text/javascript" src="web/js/funcs.js"></script>
+        
+        
+        <script type="text/javascript" src="js/lib/phaser.js"></script>
+        <script type="text/javascript" src="js/global/boot.js"></script>
+        <script type="text/javascript" src="js/global/preload.js"></script>
+        <script type="text/javascript" src="js/global/title.js"></script>
+        <script type="text/javascript" src="js/putting/putting.js"></script>
+            <script type="text/javascript" src="js/putting/ball.js"></script>
+            <script type="text/javascript" src="js/putting/paddle.js"></script>
+            <script type="text/javascript" src="js/putting/controls.js"></script>
+            <script type="text/javascript" src="js/putting/launcher.js"></script>
+        <script type="text/javascript" src="js/global/main.js"></script>
+        <script type="text/javascript" src="js/intro/intro.js"></script>
+        <script type="text/javascript" src="js/drivingGame/drivingGame.js"></script>
+        <script type="text/javascript" src="js/cutScene1/cutScene1.js"></script>
+        <script type="text/javascript" src="js/cutScene2/cutScene2.js"></script>
+        <script type="text/javascript" src="js/parkingGame/parkingGame.js"></script>
+        <script type="text/javascript" src="js/endScene/endScene.js"></script>
+        <script type="text/javascript" src="js/scoreBoard/scoreBoard.js"></script>
+        <script type="text/javascript" src="js/blankScene/blankScene.js"></script>
+
+        <script type="text/javascript" src="js/global/timer.js"></script>
+        <script type="text/javascript" src="js/global/pauseMenu.js"></script>
+        <script type="text/javascript" src="js/global/level.js"></script>
+
+    </head>
+
+    <body>
+
+
+        <div id="panels" style="width: 100%; overflow: hidden;">
+            <div id="panelsI" style="width: 300%; overflow: hidden; position: relative;">
+                
+                <div id="panel1" style="position: absolute; left: 0%; top: 0; width: 33.3%; height: 100%;  background-image: url(web/images/panel1.jpg); background-size: cover;">
+
+                    <div style="position: absolute; left: 50%; top: 0; width: 50%; height: 100%; "><a href="javascript: slideRight();" style="width: 100%; height: 100%; display: block;"></a></div>
+
+                </div>
+
+                <div id="panel2" style="position: absolute; left: 33.3%; top: 0; width: 33.3%; height: 100%; background-image: url(web/images/panel2.jpg); background-size: cover;">
+
+                    
+                    <div style="position: absolute; left: 0; top: 0; width: 20%; height: 100%; "><a href="javascript: slideLeft();" style="width: 100%; height: 100%; display: block;"></a></div>
+                    <div style="position: absolute; left: 20%; top: 0; width: 60%; height: 100%; "><a href="javascript: startGame();" style="width: 100%; height: 100%; display: block;"></a></div>
+                    <div style="position: absolute; left: 80%; top: 0; width: 20%; height: 100%; "><a href="javascript: slideRight();" style="width: 100%; height: 100%; display: block;"></a></div>
+
+                    <div id="gameArea" style="width: 100%; font-family: joystix; display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%;">
+                        <!--
+                        <div style="width: 50%; height: 100px; background-color: #000; color: #fff; font-size: 30px; float: left;">
+                            Timer <span id="time"></span>
+                        </div>
+                        <div style="width: 50%; height: 100px; background-color: #000; color: #fff; font-size: 30px; float: left;">
+                            Level <span id="level"></span>
+                        </div>
+                        -->
+                        <div id="gameCanvasWrapper"></div>
+                    </div>
+                    
+
+                </div>
+
+                <div id="panel3" style="position: absolute; left: 66.6%; top: 0; width: 33.3%; height: 100%; background-image: url(web/images/panel3.jpg); background-size: cover;">
+
+                        <div style="position: absolute; left: 0; top: 0; width: 50%; height: 100%; "><a href="javascript: slideLeft();" style="width: 100%; height: 100%; display: block;"></a></div>
+
+                </div>
+            </div>
+        </div>
+        
+        <!--<div style="font-family: joystix;">0123456789</div>-->
+
+
+    </body>
+
+</html>
